@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form input{margin-bottom: 8px; padding: 4px;}
+        .kirmizi{color: red;}
+        .yesil{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <h3>Kayıt Formu</h3>
+        <p id="err"></p>
+        <input id="ad" type="text" placeholder="Kullanıcı Adı" required><br>
+        <input id="sifre" type="password" placeholder="Şifre"  required><br>
+        <input id="sifre-2" type="password" placeholder="Şifre Tekrar" required>
+        <input type="checkbox" id="numbers" onclick="parolagoster()" /><br>
+        <button id="formSubmit" type="submit">Gönder</button>
+    </form>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
